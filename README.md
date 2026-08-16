@@ -7,7 +7,7 @@ Author : [Mahsa Dashti]
 Date : 2026
 """ 
 
-import numpy as np 
+import numpy as np  
 import matplotlib.pyplot as plt
 
 # ====== parameters ======
