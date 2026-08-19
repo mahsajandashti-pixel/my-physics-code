@@ -1,10 +1,10 @@
-Computational Physics Journey
+# Computational Physics Journey
 
 A learning journey through physics and scientific programming, starting from classical mechanics and gradually progressing toward modern physics and quantum mechanics.
 
 This repository contains numerical simulations, mathematical models, and computational experiments implemented in Python.
 
-Learning Path
+# Learning Path
 
 1. Classical Mechanics
 
@@ -64,7 +64,7 @@ Gradually moving toward computational quantum mechanics:
 - Particle physics
 - Computational models of physical systems
 
-Current Project
+# Current Project
 
 Projectile Motion with Air Resistance
 
@@ -72,14 +72,14 @@ The first project in this repository studies projectile motion under gravity and
 
 The equations of motion are solved numerically using the Euler method, and the results are visualized using Matplotlib.
 
-Technologies
+# Technologies
 
 - Python
 - NumPy
 - Matplotlib
 - Jupyter Notebook
 
-Numerical Methods
+# Numerical Methods
 
 The repository will gradually introduce numerical techniques commonly used in computational physics, including:
 
@@ -91,7 +91,7 @@ The repository will gradually introduce numerical techniques commonly used in co
 - Numerical solutions of differential equations
 - Numerical solutions of partial differential equations
 
-Goal
+# Goal
 
 The goal of this repository is to develop a strong foundation in:
 
@@ -99,8 +99,8 @@ Physics + Mathematics + Scientific Programming + Computational Modeling
 
 The projects will gradually increase in mathematical and computational complexity, beginning with classical mechanics and eventually reaching quantum mechanics and modern physics.
 
-Author
+# Author
 
-Mahsa Sadat Dashti
+# Mahsa Sadat Dashti
 
 Physics Student
