@@ -1,67 +1,106 @@
-# my-physics-code
-numerical simulations of basic physics including projectile motion and simple harmonic motion using NumPy and Matplotlib 
-"""
-projectile motion simulation  
-free fall under gravity using euler method
-Author : [Mahsa Dashti]
-Date : 2026
-""" 
+Computational Physics Journey
 
-import numpy as np  
-import matplotlib.pyplot as plt
+A learning journey through physics and scientific programming, starting from classical mechanics and gradually progressing toward modern physics and quantum mechanics.
 
-# ====== parameters ======
+This repository contains numerical simulations, mathematical models, and computational experiments implemented in Python.
 
-g = 9.8     #gravitional acceleration (m/s^2)
-k = 0.15    # air resistance coefficient
-dt = 0.01   # time step (s)
-t_max = 10.0  # maximum simulation time (s)
+Learning Path
 
-# ====== initial conditions ======
+1. Classical Mechanics
 
-time_steps = int(t_max / dt) # total number of time steps 
-t = np.zeros(time_steps)     # time array
-y = np.zeros(time_steps)     # height array 
-v = np.zeros(time_steps)     # velocity array
+Starting with fundamental Newtonian physics:
 
-y[0]=100.0  # initial height(m) 
-v[0]=0.0    # initial velocity(m/s) 
+- Projectile motion
+- Free fall
+- Motion with air resistance
+- Newton's laws of motion
+- Work and energy
+- Conservation of momentum
+- Circular motion
+- Simple harmonic motion
+- Coupled oscillations
 
-# ====== numerical integration (euler method) ======
+2. Waves and Oscillations
 
-for i in range(time_steps - 1):
-    # update time
-    t[i+1] = t[i] + dt
-    # calculate acceleration 
-    a = -g - k * v[i]
-    # update velocity and position using euler method 
-    v[i+1]=v[i]+a *dt
-    y[i+1]=y[i]+v[i]*dt
-    
-    # ground collision detection 
-    # if object hits the ground , stop the simulation 
-    if y[i+1]<= 0:
-        y[i+1]=0   # set height to exactly zero
-        t=t[:i+2]  # truncate time array 
-        y=y[:i+2]  # truncate height array 
-        v=v[:i+2]  # truncate velocity array 
-        break      # exit the loop
+- Simple harmonic oscillators
+- Damped oscillations
+- Driven oscillations
+- Resonance
+- Wave motion
+- Standing waves
 
-# ====== visualization ======
-plt.figure(figsize=(8,5))  # create figure wth specific size 
-plt.plot(t,y,label='y(t)',color='red',linewidth=2)  # plot height vs time
-plt.plot(t,v,label='v(t)',color='blue',linewidth=4) # plot velocity vs time
-# customize the plot 
-plt.title('projectile motion' , fontsize = 14 , fontweight = 'bold') 
-plt.xlabel('time')
-plt.ylabel('height')
-plt.grid(True)
-plt.legend()
-plt.show()
+3. Electromagnetism
 
-# ====== simulation result ======
-print("Simulation Results:")
-print(f"time of flight:{t[-1]:.2f}seconds")
-print(f"impact velocity : {v[-1]:.2f} m/s")
-print(f"final height : {y[-1]:.2f} m")
+- Electric fields
+- Electric potential
+- Magnetic fields
+- Charged particle motion
+- Electromagnetic waves
 
+4. Relativity
+
+- Special relativity
+- Time dilation
+- Length contraction
+- Relativistic momentum and energy
+- Mass–energy equivalence
+
+5. Quantum Mechanics
+
+Gradually moving toward computational quantum mechanics:
+
+- Wave functions
+- Probability density
+- Schrödinger equation
+- Infinite potential well
+- Quantum harmonic oscillator
+- Tunneling
+- Numerical solutions of quantum systems
+
+6. Modern Physics
+
+- Atomic physics
+- Nuclear physics
+- Particle physics
+- Computational models of physical systems
+
+Current Project
+
+Projectile Motion with Air Resistance
+
+The first project in this repository studies projectile motion under gravity and air resistance.
+
+The equations of motion are solved numerically using the Euler method, and the results are visualized using Matplotlib.
+
+Technologies
+
+- Python
+- NumPy
+- Matplotlib
+- Jupyter Notebook
+
+Numerical Methods
+
+The repository will gradually introduce numerical techniques commonly used in computational physics, including:
+
+- Euler method
+- Runge–Kutta methods
+- Numerical integration
+- Numerical differentiation
+- Root-finding
+- Numerical solutions of differential equations
+- Numerical solutions of partial differential equations
+
+Goal
+
+The goal of this repository is to develop a strong foundation in:
+
+Physics + Mathematics + Scientific Programming + Computational Modeling
+
+The projects will gradually increase in mathematical and computational complexity, beginning with classical mechanics and eventually reaching quantum mechanics and modern physics.
+
+Author
+
+Mahsa Sadat Dashti
+
+Physics Student
