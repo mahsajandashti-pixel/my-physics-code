@@ -10,7 +10,7 @@ This repository contains numerical simulations, mathematical models, and computa
 
 Starting with fundamental Newtonian physics:
 
-- Projectile motion []
+- Projectile motion 
 - Free fall
 - Motion with air resistance
 - Newton's laws of motion
