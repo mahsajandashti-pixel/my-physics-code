@@ -9,16 +9,15 @@ The trajectory is simulated numerically using the Euler method and compared with
 The projectile is launched with an initial velocity \(v_0\) at an angle \(\theta\) above the horizontal.
 
 The equations of motion are:
-$
+
 \[
 a_x = 0
 \]
-$
-$
+
 \[
 a_y = -g
 \]
-$
+
 The Euler method is used to numerically integrate the equations of motion.
 
 ## Numerical Method
